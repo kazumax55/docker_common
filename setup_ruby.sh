@@ -2,7 +2,7 @@
 
 versions=$@
 
-cd /root
+cd
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' > ~/.rbenv/rbenv.sh
 echo 'eval "$(rbenv init -)"' >> ~/.rbenv/rbenv.sh
