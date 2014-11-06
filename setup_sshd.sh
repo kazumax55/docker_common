@@ -9,7 +9,7 @@ echo root:root | chpasswd
 
 cat <<EOF > /etc/supervisord.d/sshd.conf
 [program:sshd]
-command=/usr/sbin/sshd -D -d
+command=/usr/sbin/sshd -D
 numprocs=1
 autostart=true
 autorestart=true
