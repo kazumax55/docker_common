@@ -5,7 +5,7 @@ mkdir -p /var/run/sshd
 ssh-keygen -f /etc/ssh/ssh_host_rsa_key -N '' -t rsa
 ssh-keygen -f /etc/ssh/ssh_host_dsa_key -N '' -t dsa
 
-echo root:rootroot | chpasswd
+echo root:root | chpasswd
 
 cat <<EOF > /etc/supervisord.d/sshd.conf
 [program:sshd]
