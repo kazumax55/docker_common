@@ -1,6 +1,7 @@
 yum -y install python-setuptools
 easy_install pip
-pip install supervisor
+pip install meld3==1.0.0
+pip install supervisor==3.1.3
 
 echo_supervisord_conf > /etc/supervisord.conf
 sed -i 's|^logfile=.*|logfile=/var/log/supervisor/supervisord.log|' /etc/supervisord.conf
